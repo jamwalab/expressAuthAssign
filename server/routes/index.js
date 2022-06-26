@@ -2,15 +2,17 @@
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
+let indexController = require('../controllers/index');
 
 // define the game model
-let book = require('../models/books');
+//let book = require('../models/books');
 
-/* GET home page. wildcard */
+//router.get('/', indexController.displayHomePage);
+
 router.get('/', (req, res, next) => {
-  res.render('content/index', {
-    title: 'Home',
-    books: ''
+  console.log("here");
+  res.render('index', {
+    title: 'Home'
    });
 });
 

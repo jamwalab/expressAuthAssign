@@ -1,11 +1,10 @@
 /*
 ## ABHISHEK JAMWAL 
 ## 301193790
-## COMP229-S2022-MidTerm-301193790
 */
 
 let app = require('./server/config/app');
-let debug = require('debug')('comp308-w2019-midterm:server');
+let debug = require('debug')('auth-assignment:server');
 let http = require('http');
 
 /**
